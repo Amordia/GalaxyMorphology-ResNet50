@@ -1,16 +1,20 @@
 # Galaxy Morphology Classification using ResNet50
 
-This repository contains the implementation of a supervised machine learning algorithm for galaxy morphology classification using ResNet50. It includes the full source code, datasets, and result visualizations.
+This repository contains the supervised implementation of galaxy morphology classification using the ResNet50 architecture. It is part of a broader project exploring different methodologies for galaxy morphology classification, including semi-supervised approaches using Convolutional AutoEncoders (CAE) and MoCo.
 
-## Background
+## Background and Significance
 
-Galaxies come in a variety of shapes and sizes. Automated classification of galaxy morphology is crucial for understanding the universe's evolution and structure. This project employs the ResNet50 architecture to achieve this task.
+Galaxy morphology studies are a crucial part of astronomical research, aiding our understanding of the universe's history and evolution. However, classifying galaxy morphologies is often intricate and time-consuming, requiring extensive manual effort and expertise. Thus, an effective automated approach for large-scale galaxy morphology data has become an important astronomical research topic.
 
-## Directory Structure
+Recent successes of deep learning and machine learning in image classification and recognition pave the way for automating galaxy morphology classification. Traditional supervised learning methods often require ample labeled data, which can be a luxury in many real-world applications. Also, the unique characteristics of astronomical data, such as high noise levels and imbalances, mean that directly applying existing deep learning models might not yield optimal results.
 
-- `src/`: Contains the main source code in a Jupyter notebook format.
-- `datasets/`: Contains datasets used for training and validation.
-- `results/`: Contains various plots and CSV files showcasing the model's performance.
+In the broader context of this research, various methodologies, including the MoCo-based semi-supervised learning algorithm, were explored. This specific repository focuses on the supervised ResNet50 model for galaxy morphology classification, serving as a baseline for comparing other methods.
+
+## Repository Structure
+
+- `src/`: Contains the main source code in Jupyter notebook format.
+- `datasets/`: Datasets used for training and validation.
+- `results/`: Contains various plots showcasing the model's performance.
 - `models/`: Contains the saved weights of trained models.
 
 ## Getting Started
@@ -22,8 +26,13 @@ Galaxies come in a variety of shapes and sizes. Automated classification of gala
 
 ## Results
 
-The results directory contains visualizations like accuracy, loss, ROC curve, and confusion matrices.
+Refer to the `results/` directory for visualizations such as accuracy, loss, ROC curve, and confusion matrices.
+
+## Related Repositories
+
+- [Convolutional AutoEncoders (CAE) for Galaxy Morphology Classification](https://github.com/Amordia/GalaxyMorphology-CAE.git)
+- [MoCo-based Semi-Supervised Learning for Galaxy Morphology Classification](https://github.com/Amordia/GalaxyMorphology-MoCo.git)
 
 ## License
 
-This project is licensed under the MIT License. (You can link to your LICENSE.md file here if you include one in your repository.)
+This project is licensed under the MIT License.
